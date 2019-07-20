@@ -12,6 +12,7 @@
     "doc": "jsdoc -c ./build_conf/jsdoc.conf.json",
     "here": "echo IMPLEMENTAR",
     "serve": "node src/server/index.js",
+    "start": "node src/server/index.js",
     "test-con": "echo IMPLEMENTAR",
     "test-gen-data": "cd spec_data/generate ; ./0_generate.sh",
     "test": "npm run build && npm run test-nolint",
