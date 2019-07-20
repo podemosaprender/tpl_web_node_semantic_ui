@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sequelize SQLite3 Example</title>
+    <meta name="description" content="Sequelize SQLite3 Example">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <h1>
+        A list of users
+      </h1>
+    </header>
+
+    <main>
+      <p>Add a new user:</p>
+      <form>
+        <input id="fName" type="text" maxlength="100" placeholder="John"> <input id="lName" type="text" maxlength="100" placeholder="Hancock">
+        <button type="submit">Submit</button>
+      </form>
+      <p>Users:</p>
+      <section class="users">
+        <ul id="users">
+        </ul>
+      </section>
+      <p><a href="/reset">Reset</a> | <a href="/clear">Clear</a></p>
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
