@@ -23,6 +23,30 @@
     "release": "echo IMPLEMENTAR",
     "uglify": "echo IMPLEMENTAR"
   },
+	"bin": "src/server/index.js",
+	"pkg": {
+			"assets": [
+				"src/**/*",
+"/node_modules/leaflet/dist/leaflet.js",
+"/node_modules/proj4/dist/proj4.js",
+"/node_modules/highland/dist/highland.js",
+"/node_modules/sprintf-js/dist/sprintf.min.js",
+"/node_modules/crypto-js/crypto-js.js",
+"/node_modules/url-join/lib/url-join.js",
+"/node_modules/preact/dist/preact.dev.js",
+"/node_modules/preact-context/dist/context.js",
+"/node_modules/preact-compat/dist/preact-compat.js",
+"/node_modules/preact-router/dist/preact-router.js",
+"/node_modules/history/umd/history.js",
+"/node_modules/preact-render-to-string/dist/index.js",
+"/node_modules/linkstate/dist/linkstate.umd.js",
+"/node_modules/semantic-ui-react/dist/umd/semantic-ui-react.min.js",
+"/node_modules/semantic-ui-forest-themes/**/*"
+			],
+			"targets": [
+				"node8"
+			]
+	},
   "repository": {
     "type": "git",
     "url": "git://github.com/mauriciocap/semantic_tpl.git"
@@ -77,3 +101,4 @@
     "semantic-ui-forest-themes": "^1.0.3"
   }
 }
+
