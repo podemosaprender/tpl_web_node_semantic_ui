@@ -1,5 +1,14 @@
 //INFO: vars globales, inicializa, etc.
 
+//-----------------------------------------------------------------------
+//S: funciones
+function escapeAttr(s) { //U: caracteres "raros" a entity html
+	return s.replace(/[^A-Z0-9-_]/gi, c => ('&#'+c.charCodeAt(0)+';'));
+}
+
+
+//-----------------------------------------------------------------------
+//S: UI
 var { Component, h, render } = window.preact;
 var { Header, Icon, Image, Menu, Segment, Sidebar, Button, Input, List }= window.semanticUIReact;
 
@@ -22,3 +31,12 @@ function MkUiComponent(f, proto) {
 
 UiNA= () => h('div',{},'UiNA:NOT IMPLEMENTED');
 
+var Estilos= "cerulean chubby cosmo cyborg darkly flatly journal lumen paper readable sandstone simplex slate solar spacelab superhero united yeti".split(' '); //U: lista de estilos de theme forest disponibles
+
+function setTheme(t) { //U: activar el estilo con nombre t
+  var st= document.getElementById("tema");
+  st.href='/node_modules/semantic-ui-forest-themes/semantic.'+t+'.min.css';
+}
+
+
+var app_style= {};

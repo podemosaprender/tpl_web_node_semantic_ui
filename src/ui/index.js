@@ -1,12 +1,3 @@
-var Estilos= "cerulean chubby cosmo cyborg darkly flatly journal lumen paper readable sandstone simplex slate solar spacelab superhero united yeti"
-              .split(' ');
-var app_style= {};
-
-function setTheme(t) {
-  var st= document.getElementById("tema");
-  st.href='/node_modules/semantic-ui-forest-themes/semantic.'+t+'.min.css';
-}
-
 Preguntas= [ //U: esta es la lista de preguntas, la podria bajar de un servidor y guardar en localStorage
   {
       titulo: 'Quien descubrio America?',
