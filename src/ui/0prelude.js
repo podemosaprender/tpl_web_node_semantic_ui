@@ -10,7 +10,7 @@ function escapeAttr(s) { //U: caracteres "raros" a entity html
 //-----------------------------------------------------------------------
 //S: UI
 var { Component, h, render } = window.preact;
-var { Header, Icon, Image, Menu, Segment, Sidebar, Button, Input, List }= window.semanticUIReact;
+var { Grid, Table, Dropdown ,Label ,Select ,Header, Icon, Image, Menu, Segment, Sidebar, Modal,Button, Input, List, Item, Container, Form, Message }= window.semanticUIReact;
 
 render_str= preactRenderToString;
 

@@ -19,7 +19,7 @@
     "test-server": "karma --no-browsers -port 8080 start ./spec/karma.conf.js --cov",
     "test-nolint": "karma start ./spec/karma.conf.js --cov",
     "code-sloc": "npx sloc --details --format cli-table src/ > doc/ref/sloc.txt",
-    "build": "echo IMPLEMENTAR",
+    "build": "%APPDATA%/npm/pkg --out-path x_out/exe -t node10-macos,node10-win . ",
     "release": "echo IMPLEMENTAR",
     "uglify": "echo IMPLEMENTAR"
   },
@@ -44,7 +44,7 @@
 "/node_modules/semantic-ui-forest-themes/**/*"
 			],
 			"targets": [
-				"node8"
+				"node10"
 			]
 	},
   "repository": {
@@ -57,10 +57,13 @@
     "canvas": "^2.4.1",
     "cross-fetch": "^3.0.1",
     "crypto-js": "^3.1.9-1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.5",
     "foodoc": "0.0.9",
     "git-rev-sync": "^1.8.0",
     "happen": "~0.3.2",
     "highland": "github:mauriciocap/highland#patched-map",
+    "history": "^4.9.0",
     "http-server": "^0.11.1",
     "jsdoc-plantuml": "^1.0.1",
     "jsdoc-toolkit": "0.0.2",
@@ -77,10 +80,17 @@
     "karma-sinon": "^1.0.5",
     "karma-sourcemap-loader": "^0.3.7",
     "leaflet": "^1.5.1",
+    "linkstate": "^1.1.1",
     "mocha": "^3.1.0",
+    "preact": "^8.4.2",
+    "preact-compat": "^3.18.5",
+    "preact-router": "^2.6.1",
     "proj4": "^2.5.0",
     "prosthetic-hand": "^1.3.1",
     "puppeteer": "^1.13.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-forest-themes": "^1.0.3",
+    "semantic-ui-react": "^0.87.1",
     "shelljs": "^0.8.3",
     "sinon": "^1.6.0",
     "sloc": "^0.2.1",
@@ -89,16 +99,7 @@
     "sprintf-js": "^1.1.2",
     "ssri": "^5.2.2",
     "uglify-js": "~3.0.26",
-    "url-join": "^4.0.0",
-    "history": "^4.9.0",
-    "linkstate": "^1.1.1",
-    "preact": "^8.4.2",
-    "preact-compat": "^3.18.5",
-    "preact-router": "^2.6.1",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.87.1",
- 		"express": "^4.16.4",
-    "semantic-ui-forest-themes": "^1.0.3"
+    "url-join": "^4.0.0"
   }
 }
 
